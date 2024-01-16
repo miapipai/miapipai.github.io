@@ -59,7 +59,7 @@ function main() {
     }
 
     const unlockButton = document.querySelector("#unlockbutton");
-    const passwordPrompt = document.querySelector("#password");
+    const passwordPrompt = document.querySelector("#text");
     passwordPrompt.addEventListener("keypress", (e) => {
       if (e.key === "Enter") {
         unlockButton.click();
