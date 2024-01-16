@@ -38,15 +38,13 @@
   </noscript>
 
   <form action="" class="remember-input" style="display: none">
-    <p>Please enter the password to unlock the link. V 11</p>
+    <p>Please enter the password to unlock the link. V 12</p>
     <p id="hint"></p>
 
     <hr />
 
     <label for="password">password</label>
-    <input type="password" id="password" autofocus autocomplete="on"/>
-	<label for="password">text</label>
-	<input type="text" id="text" autofocus autocomplete="on"/>
+    <input type="password" id="password" class="form-control" name="firstpassword" autofocus autocomplete="on"/>
     <button id="unlockbutton">Unlock link</button>
 	<button type="button" onclick="alert(document.referrer)">Previous site</button>
   </form>
@@ -74,7 +72,6 @@
         // }, 5000);
       },
       clearOnSubmit: true,
-      exclude: ["password"],
     });
 </script>
 
