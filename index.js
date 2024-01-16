@@ -78,11 +78,11 @@ function main() {
 
         // Set the "decrypt without redirect" URL appropriately
         document.querySelector("#no-redirect").href =
-          `https://miapipai.github.io/link-lock/decrypt/#${hash}`;
+          `https://miapipai.github.io/miapipai.github.io/decrypt/#${hash}`;
 
         // Set the "create hidden bookmark" URL appropriately
         document.querySelector("#hidden").href =
-          `https://miapipai.github.io/link-lock/hidden/#${hash}`;
+          `https://miapipai.github.io/miapipai.github.io/hidden/#${hash}`;
         return;
       }
 
