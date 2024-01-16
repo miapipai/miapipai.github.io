@@ -1,5 +1,5 @@
 function error(text) {
-  //document.querySelector(".form").style.display = "none";
+  document.querySelector(".form").style.display = "none";
   document.querySelector(".error").style.display = "inherit";
   document.querySelector("#errortext").innerText = `Error: ${text}`;
 }
@@ -7,7 +7,7 @@ function error(text) {
 // Run when the <body> loads
 function main() {
   if (window.location.hash) {
-    //document.querySelector(".form").style.display = "inherit";
+    document.querySelector(".form").style.display = "inherit";
     document.querySelector("#password").value = "";
     document.querySelector("#password").focus();
     document.querySelector(".error").style.display = "none";
