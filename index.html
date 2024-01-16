@@ -33,8 +33,8 @@
   </div>
   </noscript>
 
-  <div class="form" style="display: none">
-    <p>Please enter the password to unlock the link. V 6</p>
+  <form action="" class="remember-input" style="display: none">
+    <p>Please enter the password to unlock the link. V 7</p>
     <p id="hint"></p>
 
     <hr />
@@ -54,5 +54,16 @@
     <a href="https://miapipai.github.io/miapipai.github.io/hidden/" id="hidden" target="_blank"><button>Create hidden bookmark</button></a>
   </div>
 </body>
+
+<script type="text/javascript" src="remember-input.min.js"></script>
+<script>
+    Remember.init({
+      handleSubmit: true,
+      onSubmit: (e, data, submit) => {
+        console.log(data);
+      },
+      clearOnSubmit: true,
+    });
+</script>
 
 </html>
