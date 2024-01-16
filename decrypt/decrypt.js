@@ -116,6 +116,6 @@ function onCopy(id) {
 function main() {
   if (window.location.hash) {
     document.querySelector("#encrypted-url").value =
-      `https://miapipai.github.io/link-lock/${window.location.hash}`;
+      `https://miapipai.github.io/miapipai.github.io/${window.location.hash}`;
   }
 }
