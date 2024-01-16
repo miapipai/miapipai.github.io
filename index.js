@@ -1,6 +1,6 @@
 function error(text) {
   //document.querySelector(".form").style.display = "none";
-  document.querySelector(".error").style.display = "inherit";
+  //document.querySelector(".error").style.display = "inherit";
   document.querySelector("#errortext").innerText = `Error: ${text}`;
 }
 
@@ -10,7 +10,7 @@ function main() {
     //document.querySelector(".form").style.display = "inherit";
     document.querySelector("#password").value = "";
     document.querySelector("#password").focus();
-    document.querySelector(".error").style.display = "none";
+    //document.querySelector(".error").style.display = "none";
     document.querySelector("#errortext").innerText = "";
 
     // Fail if the b64 library or API was not loaded
