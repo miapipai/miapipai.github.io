@@ -42,13 +42,13 @@
     <label for="password">password</label>
     <input type="password" id="password" autofocus />
     <button id="unlockbutton">Unlock link</button>
+	<button type="button" onclick="alert(document.referrer)">Previous site</button>
   </div>
 
   <!-- Display errors in a big red box -->
   <div class="error red-border" style="display: none">
     <p id="errortext">Error</p>
     <button onclick="main()">Try again</button>
-	<button type="button" onclick="alert(document.referrer)">Previous site</button>
     <a href="https://miapipai.github.io/miapipai.github.io"><button>Lock a link</button></a>
     <a href="https://miapipai.github.io/miapipai.github.io/decrypt/" id="no-redirect" target="_blank"><button>Decrypt without redirect</button></a>
     <a href="https://miapipai.github.io/miapipai.github.io/hidden/" id="hidden" target="_blank"><button>Create hidden bookmark</button></a>
