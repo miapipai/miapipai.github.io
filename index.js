@@ -8,8 +8,8 @@ function error(text) {
 function main() {
   if (window.location.hash) {
     //document.querySelector(".form").style.display = "inherit";
-    document.querySelector("#password").value = "";
-    document.querySelector("#password").focus();
+    //document.querySelector("#text").value = "";
+    document.querySelector("#text").focus();
     //document.querySelector(".error").style.display = "none";
     //document.querySelector("#errortext").innerText = "";
 
