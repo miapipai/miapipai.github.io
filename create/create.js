@@ -121,19 +121,10 @@ async function onEncrypt() {
 
   const encrypted = await generateFragment(url, password, hint, useRandomSalt,
       useRandomIv);
-  const output = `https://jstrieb.github.io/link-lock/#${encrypted}`;
+  const output = `https://miapipai.github.io/link-lock/#${encrypted}`;
 
   document.querySelector("#output").value = output;
   highlight("output");
-
-  // Adjust "Hidden Bookmark" link
-  document.querySelector("#bookmark").href = `https://jstrieb.github.io/link-lock/hidden/#${encrypted}`;
-
-  // Adjust "Open in New Tab" link
-  document.querySelector("#open").href = output;
-
-  // Adjust "Get TinyURL" button
-  document.querySelector("#tinyurl").value = output;
 
   // Scroll to the bottom so the user sees where the bookmark was created
   window.scrollTo({
